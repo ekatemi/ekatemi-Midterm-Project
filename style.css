@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: #f2f4fc;
+  font-family: sans-serif, "roboto";
+  font-size: 16px;
+  margin: 3.75rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #292e47;
+  padding-bottom: 3.75rem;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 3.125rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.6;
+  color: #6b708d;
+  padding-bottom: 3.75rem;
+}
+
+.navbar,
+.hero-section,
+.client-section,
+.projects-section,
+.services-section,
+footer {
+  padding: 4.375rem 10.625rem;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  /* background-color: crimson; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: -2px 5px 3px rgba(107, 112, 141, 0.5);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-list a {
+  /* background-color: blue; */
+  margin: 0 2rem;
+  text-decoration: none;
+  color: #6b708d;
+
+  font-size: 1.063rem;
+  font-weight: 500;
+}
+
+.nav-list a:hover {
+  color: #072ac8;
+}
+
+#logo {
+  filter: drop-shadow(-2px 5px 3px rgba(107, 112, 141, 0.5));
+}
+
+.blue-btn {
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: #072ac8;
+  color: white;
+  padding: 15px 25px;
+  box-shadow: -2px 5px 3px rgba(107, 112, 141, 0.5);
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-image {
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#credit-card {
+  position: relative;
+  top: 10;
+  left: 10;
+}
+
+.client-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-logo {
+  filter: grayscale(100%);
+}
+
+.projects {
+  display: flex;
+}
+
+.projects-img {
+  width: 340px;
+  height: auto;
+}
+
+.testimonial-section {
+  background-color: #292e47;
+  height: 600px;
+}
+
+.cta-section {
+  padding: 8rem 0;
+  background-color: #ffc600;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer a {
+  text-decoration: none;
+}
