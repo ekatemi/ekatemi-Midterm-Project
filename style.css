@@ -31,10 +31,8 @@ h3 {
 }
 
 p {
-  font-size: 1.7rem;
   line-height: 1.6rem;
   color: #6b708d;
-  padding-bottom: 3.75rem;
 }
 
 /* NAVBAR */
@@ -84,18 +82,15 @@ p {
 
 #credit-card {
   position: absolute;
-  width: 200px;
 }
 #designer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
 }
 
 #thumb-up {
   position: absolute;
-  width: 200px;
 }
 
 .client-section {
@@ -148,5 +143,29 @@ footer a {
   }
   .nav-list li {
     font-size: 14px;
+  }
+
+  #credit-card {
+    width: 180px;
+    top: 100px;
+    left: 0px;
+  }
+
+  #designer {
+    width: 300px;
+  }
+  #thumb-up {
+    width: 180px;
+    right: 0px;
+    top: 310px;
+  }
+  .hero-text {
+    padding: 1rem 3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
   }
 }
