@@ -20,36 +20,40 @@
         <li><a href="pages\project-page.html">Projects</a></li>
         <li><a href="#services-section">Services</a></li>
       </ul>
-      <a class="blue-btn" target="_blank" href="">Contact us</a>
+      <a id="contact-us-btn" target="_blank" href="">Contact us</a>
     </nav>
     <!-- HERO SECTION -->
-    <section class="hero-section" id="about-us">
+    <section class="hero-section">
       <!-- IMAGES ON ON TOP OF ANOTHER -->
-      <div id="hero-image">
-        <img
-          id="credit-card"
-          src="project-assets\hero-section\card-1.png"
-          alt="credit card"
-        />
-        <img
-          id="designer"
-          src="project-assets\hero-section\hero-image.png"
-          alt="Happy designer"
-        />
-        <img
-          id="thumb-up"
-          src="project-assets\hero-section\card-2.png"
-          alt="Project has been accepted"
-        />
-      </div>
-      <div class="hero-text">
-        <h1>Empower Your Business With Stunning Design!</h1>
-        <p>
-          Circle is a digital design and development studio. We design and
-          develop astonishing websites and mobile apps.
-        </p>
-        <a class="blue-btn" target="_blank" href="">Get in touch </a>
-        <a target="_blank" href="">See our work</a>
+      <div id="hero">
+        <div id="hero-image">
+          <img
+            id="credit-card"
+            src="project-assets\hero-section\card-1.png"
+            alt="credit card"
+          />
+          <img
+            id="designer"
+            src="project-assets\hero-section\hero-image.png"
+            alt="Happy designer"
+          />
+          <img
+            id="thumb-up"
+            src="project-assets\hero-section\card-2.png"
+            alt="Project has been accepted"
+          />
+        </div>
+        <div id="hero-text">
+          <h1>Empower Your Business With Stunning Design!</h1>
+          <p>
+            Circle is a digital design and development studio. We design and
+            develop astonishing websites and mobile apps.
+          </p>
+          <div id="hero-links">
+            <a id="blue-btn-hero" target="_blank" href="">Get in touch </a>
+            <a target="_blank" href="">See our work</a>
+          </div>
+        </div>
       </div>
     </section>
     <!-- CLIENT SECTION -->
@@ -75,88 +79,133 @@
     </section>
     <!-- PROJECTS SECTION -->
     <section class="projects-section">
-      <h2>Recent Projects</h2>
-      <div class="projects">
-        <div class="project-box">
+      <h2 class="section-title">Recent Projects</h2>
+      <div class="project-container">
+        <!-- project 1 -->
+        <div class="project-card">
           <img
-            class="projects-img"
+            class="project-img"
             src="project-assets\projects-section\1.jpg"
             alt="project 1"
           />
-          <h3>Simplify</h3>
-          <p>UI Design & App Development</p>
-          <a href="">learn more</a>
+          <div class="project-description">
+            <h3>Simplify</h3>
+            <p>UI Design & App Development</p>
+            <p class="learn-more-link"><a href="">Learn more</a></p>
+          </div>
         </div>
-        <div class="project-box">
+        <!-- project 2 -->
+        <div class="project-card">
           <img
-            class="projects-img"
+            class="project-img"
             src="project-assets\projects-section\2.jpg"
             alt="project 2"
           />
-          <h3>Dashcoin</h3>
-          <p>Web Development</p>
-          <a href="">learn more</a>
+          <div class="project-description">
+            <h3>Dashcoin</h3>
+            <p>Web Development</p>
+            <p class="learn-more-link"><a href="">Learn more</a></p>
+          </div>
         </div>
-        <div class="project-box">
+        <!-- project 3 -->
+        <div class="project-card">
           <img
-            class="projects-img"
+            class="project-img"
             src="project-assets\projects-section\3.jpg"
             alt="project 3"
           />
-          <h3>Vectorify</h3>
-          <p>User Experience Design</p>
-          <a href="">learn more</a>
-        </div>
-        <div class="project-box">
-          <img
-            class="projects-img"
-            src="project-assets\projects-section\2.jpg"
-            alt="project 3"
-          />
-          <h3>Vectorify</h3>
-          <p>User Experience Design</p>
-          <a href="">learn more</a>
+          <div class="project-description">
+            <h3>Vectorify</h3>
+            <p>User Experience Design</p>
+            <p class="learn-more-link"><a href="">Learn more</a></p>
+          </div>
         </div>
       </div>
     </section>
     <!-- TESTIMONIAL SECTION -->
     <section class="testimonial-section">
-      <h2>Hear What Our Clients Have to Say</h2>
-      <q
-        >Circle helped us through every stage of our startup. We really enjoyed
-        working with you.
-      </q>
-      <div><img src="" alt="" /></div>
+        <img
+          class="memoji"
+          id="girl-face"
+          src="project-assets\testimonial-section\memoji-1.png"
+          alt="memoji 1"
+        />
+        <img
+          class="memoji"
+          id="men-hat"
+          src="project-assets\testimonial-section\memoji-2.png"
+          alt="memoji 2"
+        />
+        <img
+          class="memoji"
+          id="man-thumb-up"
+          src="project-assets\testimonial-section\memoji-3.png"
+          alt="memoji 3"
+        />
+        <img
+          class="memoji"
+          id="confetti"
+          src="project-assets\testimonial-section\memoji-4.png"
+          alt="memoji 4"/>
+      <div id="container-testimonial">
+        <h2>Hear What Our Clients Have to Say</h2>
+        <q>
+          Circle helped us through every stage of our startup. We really enjoyed
+          working with you.
+        </q>
+        <div id="client-profile">
+          <div class="circle-pic">
+            <img
+              src="project-assets\testimonial-section\profile.png"
+              alt="profile pic"
+            />
+          </div >
+          <div id="profile-name">
+          <p>Kristin Watson <br><a href="http://">Booking.com</a></p>
+          </div>
+        </div>
     </section>
     <!-- SERVICES SECTION -->
     <section id="services-section">
-      <h2>Our Services</h2>
-      <div>
+      <h2 class="section-title">Our Services</h2>
+      <div class="project-card">
+        <div class="project-description">
         <h3>User interface design</h3>
         <p>
           Circle provides you with a stunning user interface design that is
           accessible to everyone.
         </p>
+        <p class="learn-more-link"><a href="">Learn more</a></p>
+        </div>
       </div>
-      <div>
+      <div class="project-card">
+        <div class="project-description">
         <h3>User experience design</h3>
         <p>
           Circle always focuses on delivering the best user experience to your
           customers.
         </p>
-      </div>
-      <div>
+        <p class="learn-more-link"><a href="">Learn more</a></p>
+      </div></div>
+      <div class="project-card">
+        <div class="project-description">
         <h3>Application development</h3>
         <p>
           We develop high-quality mobile and web applications using the latest
           technology stack.
         </p>
+        <p class="learn-more-link"><a href="">Learn more</a></p>
+        </div>
       </div>
     </section>
     <!-- CTA SECTION -->
     <section class="cta-section">
       <h2>Do you have any questions?</h2>
-      <form id="subscribe" action="post" method="post">Enter your email</form>
+      <p>Let us help you!</p>
+      <form id="subscribe" action="post" method="post">
+        <input type="email" name="email" id="" /><br />
+        <input class="blue-btn" type="submit" value="Subscribe" />
+      </form>
     </section>
     <!-- FOOTER -->
     <footer>
@@ -169,13 +218,11 @@
           />
         </div>
         <address>
-          <p>
-            2972 Westheimer Rd. Santa Ana,<br />
-            Illinois 85486
-          </p>
+          2972 Westheimer Rd. Santa Ana,<br />
+          Illinois 85486
         </address>
       </div>
-      <div>
+      <div class="links-footer-grid-container">
         <ul>
           <li><a href="#" target="_blank">Team</a></li>
           <li><a href="#services-section" target="_blank">Services</a></li>

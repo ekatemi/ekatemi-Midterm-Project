@@ -17,6 +17,8 @@ h3 {
 }
 h1 {
   font-size: 8em;
+  font-weight: 700;
+  color: #292e47;
 }
 h2 {
   font-size: 3.125em;
@@ -57,7 +59,7 @@ p {
 #circle-logo {
   width: 200px;
 }
-.blue-btn {
+#blue-btn {
   white-space: nowrap;
   text-decoration: none;
   background-color: #072ac8;
@@ -113,4 +115,61 @@ footer {
 }
 footer a {
   text-decoration: none;
+}
+
+/* FOR MOBILE 360-740px*/
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem 3rem;
+  }
+  #circle-logo {
+    width: 50px;
+  }
+  .blue-btn {
+    display: none;
+  }
+  .nav-list a {
+    padding-left: 1.7rem;
+  }
+  .nav-list li {
+    font-size: 14px;
+  }
+
+  #credit-card {
+    width: 180px;
+    top: 100px;
+    left: 0px;
+  }
+
+  #designer {
+    width: 300px;
+  }
+  #thumb-up {
+    width: 180px;
+    right: 0px;
+    top: 310px;
+  }
+  .hero-text {
+    padding: 1rem 3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+/* CLIENT SECTION */
+.client-section {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.client-logo img {
+  filter: grayscale(100%);
+  height: fit-content;
+  min-width: 10px;
+  padding: 0.5rem;
 }
