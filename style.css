@@ -17,7 +17,7 @@ h1 {
   color: #292e47;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
 }
 h3,
@@ -69,7 +69,7 @@ a {
 /* HERO SECTION */
 #hero {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row-reverse;
 }
 
 /* image */
@@ -130,7 +130,6 @@ a {
 
 .project-card {
   width: 340px;
-  height: 444;
   box-shadow: 5px 5px 20px grey;
   margin: 30px auto;
 }
@@ -159,7 +158,7 @@ p > a {
   position: relative;
   margin-top: 60px;
   background-color: #292e47;
-  width: 100vw;
+  width: 100%;
 }
 #container-testimonial {
   width: 50%;
@@ -237,20 +236,40 @@ p > a {
 /* SERVICES SECTION */
 
 /* QUESTION SECTION */
-.cta-section {
-  padding: 1.5rem;
-  background-color: #ffc600;
-  text-align: center;
+form {
+  border: 3px solid #f1f1f4;
 }
 
-.blue-btn {
+.container {
+  text-align: center;
+  padding: 2px 20px;
+  background-color: #ffc600;
+}
+
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
   background-color: #072ac8;
-  margin: 0.5rem;
   color: white;
   border: none;
 }
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+/*FOOTER*/
+
 footer {
-  margin: 3rem;
+  border: 1px solid blue;
+  margin: 5rem;
 }
 footer li {
   list-style: none;
