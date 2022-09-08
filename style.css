@@ -261,23 +261,26 @@ form {
 }
 
 input[type="text"] {
-  width: 100%;
-  padding: 1.5em;
+  width: 90%;
+  background-image: url("project-assets/newsletter/icon/mail.svg");
+  background-repeat: no-repeat;
+  background-position: 1em 1em;
+  padding: 1.5em 4em;
   border: none;
   box-sizing: border-box;
 }
 
 button {
   display: inline-block;
-  width: 100%;
+  width: 90%;
   background-color: #072ac8;
-  padding: 1.5em 2em;
+  padding: 1.5em;
   margin-top: 1em;
   color: white;
   border: none;
 }
 
-input[type="submit"]:hover {
+button:hover {
   opacity: 0.8;
 }
 
