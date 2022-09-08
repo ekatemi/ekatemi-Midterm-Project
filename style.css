@@ -4,15 +4,16 @@ html {
   padding: 0;
 }
 body {
+  background-color: #f2f4fc;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background-color: #f2f4fc;
   font-size: 16px;
   width: 100%;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
+
 h1 {
   font-size: 30px;
   font-weight: 700;
@@ -376,15 +377,52 @@ footer a:hover {
     justify-content: space-between;
     align-items: center;
     filter: grayscale(100%);
-    margin: 8em 0;
+    margin: 8em 4em;
   }
 
   /* PROJECTS SECTION */
-
-  .project-card {
+  .section-title {
+    width: 80%;
+    margin: 0.5em auto;
+  }
+  .project-container {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 2em;
+  }
+  .testimonial-section,
+  .cta-section {
+    width: 95%;
+    margin: 8em auto;
+  }
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+  }
+  input[type="text"] {
+    padding: 1.5em 4em;
+    margin-top: 1em;
+  }
+
+  button {
+    background-color: #072ac8;
+    padding: 1.5em;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  footer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .links-footer-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2em;
+    column-gap: 3em;
   }
 }
-
-/* MEDIA QUERY END -------------------------------------------------*/
