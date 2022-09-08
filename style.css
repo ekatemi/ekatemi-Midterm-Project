@@ -9,7 +9,7 @@ body {
   background-color: #f2f4fc;
 
   width: 100%;
-  max-width: 1400px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,14 +39,13 @@ a {
 
 /* NAVBAR */
 .navbar {
+  border: 1px solid red;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 2em;
 }
-#circle-logo {
-  height: 20px;
-  padding-bottom: 4px; /* maybe delete it later */
-}
+
 .nav-list {
   display: flex;
   justify-content: space-between;
@@ -157,8 +156,6 @@ p > a {
   position: relative;
   margin-top: 60px;
   background-color: #292e47;
-  background-image: url(project-assets\testimonial-section\orbit.png);
-  background-clip: border-box;
   width: 100%;
 }
 #container-testimonial {
@@ -257,17 +254,19 @@ form {
   font-weight: 500;
 }
 
-input[type="text"],
-input[type="submit"] {
+input[type="text"] {
   width: 100%;
   padding: 1.5em;
-  margin: 0.5em 0;
   border: none;
   box-sizing: border-box;
 }
 
-input[type="submit"] {
+button {
+  display: inline-block;
+  width: 100%;
   background-color: #072ac8;
+  padding: 1.5em 2em;
+  margin-top: 1em;
   color: white;
   border: none;
 }
@@ -278,16 +277,29 @@ input[type="submit"]:hover {
 
 /*FOOTER*/
 footer {
-  border: 1px solid blue;
-  margin: 5rem;
+  padding: 2em 3em 4em;
 }
-footer li {
-  list-style: none;
+
+.circle-logo {
+  width: 100px;
+  margin-bottom: 1em;
 }
+address {
+  font-style: normal;
+  margin-bottom: 3em;
+}
+
 footer a {
   text-decoration: none;
+  color: #6b708d;
 }
+footer a:hover {
+  color: #292e47;
+}
+
 .links-footer-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 2em;
+  column-gap: 2em;
 }
