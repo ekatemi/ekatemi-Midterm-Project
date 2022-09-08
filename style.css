@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 html {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
 
   width: 100%;
-  max-width: 1000px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,21 +39,21 @@ a {
 
 /* NAVBAR */
 .navbar {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
+  padding-left: 0;
 }
 .nav-list a {
   color: #6b708d;
-  padding-left: 2em; /* space between nav items */
+  padding-left: 1em;
 }
 #contact-us-btn {
   display: none;
@@ -156,6 +156,10 @@ p > a {
   position: relative;
   margin-top: 60px;
   background-color: #292e47;
+  background-image: url("project-assets/testimonial-section/orbit.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
 }
 #container-testimonial {
@@ -237,6 +241,8 @@ p > a {
   background-color: #ecf7ff;
   display: flex;
   justify-content: center;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
 }
 .circle-icon img {
   width: 50%;
