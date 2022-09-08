@@ -7,7 +7,7 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
-
+  font-size: 16px;
   width: 100%;
   max-width: 1400px;
   margin-left: auto;
@@ -53,16 +53,15 @@ a {
 }
 .nav-list a {
   color: #6b708d;
-  padding-left: 1em;
+  padding-left: 2em;
 }
 #contact-us-btn {
   display: none;
 }
+
 /* HERO SECTION */
 #hero {
   margin-top: 1em;
-  /*  display: flex;
-  flex-direction: row-reverse; */
 }
 
 /* image */
@@ -312,3 +311,80 @@ footer a:hover {
   row-gap: 2em;
   column-gap: 2em;
 }
+
+/* MEDIA QUERY  --------------------------------------------*/
+@media (min-width: 900px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h3,
+  q {
+    font-size: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
+  #contact-us-btn {
+    display: inline-block;
+    background-color: #072ac8;
+    padding: 1em 2em;
+    color: white;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #hero-image {
+    display: flex;
+    position: relative;
+    width: 50%;
+  }
+
+  #designer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
+  #credit-card {
+    position: absolute;
+    width: 300px;
+    left: 0px;
+  }
+  #thumb-up {
+    position: absolute;
+    width: 300px;
+    right: 0;
+    top: 42s0px;
+  }
+
+  #hero-text {
+    width: 50%; /* of what????? */
+    text-align: left;
+    margin: 3em 0;
+  }
+
+  #hero-links {
+    justify-content: left;
+  }
+  .client-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: grayscale(100%);
+    margin: 8em 0;
+  }
+
+  /* PROJECTS SECTION */
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* MEDIA QUERY END -------------------------------------------------*/
