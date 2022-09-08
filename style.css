@@ -328,6 +328,11 @@ footer a:hover {
   p {
     font-size: 20px;
   }
+
+  .navbar {
+    width: 80%;
+  }
+
   #contact-us-btn {
     display: inline-block;
     background-color: #072ac8;
@@ -338,6 +343,8 @@ footer a:hover {
   #hero {
     display: flex;
     flex-direction: row-reverse;
+    width: 80%;
+    margin: 2em auto;
   }
 
   #hero-image {
@@ -347,20 +354,18 @@ footer a:hover {
   }
 
   #designer {
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
+    width: 100%;
   }
   #credit-card {
     position: absolute;
     width: 300px;
-    left: 0px;
+    left: -50px;
   }
   #thumb-up {
     position: absolute;
     width: 300px;
-    right: 0;
-    top: 420px;
+    right: -60px;
+    top: 430px;
   }
 
   #hero-text {
@@ -377,7 +382,8 @@ footer a:hover {
     justify-content: space-between;
     align-items: center;
     filter: grayscale(100%);
-    margin: 8em 4em;
+    width: 80%;
+    margin: 6em auto;
   }
 
   /* PROJECTS SECTION */
@@ -399,7 +405,7 @@ footer a:hover {
   }
   .container {
     width: 50%;
-    margin: 0 auto;
+    margin: 3em auto;
     display: flex;
   }
   input[type="text"] {
@@ -413,9 +419,13 @@ footer a:hover {
     margin-top: 1em;
     margin-left: 1em;
   }
+  form {
+    padding: 6em 3em;
+  }
   footer {
     width: 80%;
     margin: 0 auto;
+    padding: 0;
     display: flex;
     justify-content: space-between;
   }
