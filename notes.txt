@@ -1,0 +1,162 @@
+@media (min-width: 900px) {
+  h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  h3,
+  q {
+    font-size: 24px;
+    line-height: 28px;
+    color: #6b708d;
+  }
+  p {
+    font-size: 17px;
+  }
+
+  .strong {
+    color: #292e47;
+  }
+  .strong span {
+    color: #6b708d;
+    font-size: 17px;
+  }
+
+  .navbar {
+    width: 80%;
+  }
+
+  #contact-us-btn {
+    display: inline-block;
+    background-color: #072ac8;
+    padding: 1em 2em;
+    color: white;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 2em auto;
+  }
+
+  #hero-image {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 50%;
+  }
+
+  #designer {
+    width: 100%;
+  }
+  #credit-card {
+    position: absolute;
+    width: 50%;
+    left: -50px;
+  }
+  #thumb-up {
+    position: absolute;
+    width: 50%;
+    right: -60px;
+    top: 430px;
+  }
+
+  #hero-text {
+    width: 50%; /* of what????? */
+    text-align: left;
+    margin: 3em 0;
+  }
+
+  #hero-links {
+    justify-content: left;
+  }
+  .client-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: grayscale(100%);
+    width: 80%;
+    margin: 6em auto 0;
+  }
+
+  /* PROJECTS SECTION */
+  .section-title {
+    width: 80%;
+    margin: 0.5em auto;
+  }
+
+  .project-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2em;
+  }
+
+  .learn-more-link a {
+    position: absolute;
+    bottom: 2em;
+  }
+
+  /*project-page*/
+  .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-img-big {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin: 2em 0;
+  }
+
+  .memoji {
+    height: 150px;
+  }
+
+  .testimonial-section,
+  .cta-section {
+    width: 95%;
+    margin: 8em auto;
+  }
+
+  #container-testimonial {
+    width: 50%;
+    text-align: center;
+    padding: 5em;
+  }
+
+  /*CTA Section*/
+  .container {
+    width: 40%;
+    margin: 3em auto;
+    display: flex;
+  }
+  .cta-section input {
+    padding: 1.5em 4em;
+    margin-top: 1em;
+  }
+  .cta-section form button {
+    display: inline-block;
+    width: 50%;
+    margin-left: 1em;
+    color: white;
+    border: none;
+  }
+  /*CONTACT US PAGE*/
+  #contact-us-form input,
+  textarea {
+    width: 100%;
+  }
+  #contact-us {
+    margin-top: 5em;
+  }
+}
+
+  /*FOOTER*/
