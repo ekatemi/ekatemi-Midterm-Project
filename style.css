@@ -409,10 +409,9 @@ footer a:hover {
     text-shadow: -1px 6px 5px rgba(107, 112, 141, 0.7);
   }
 
-  #navbar-logo {
+  #navbar-img {
     filter: drop-shadow(-1px 6px 5px rgba(107, 112, 141, 0.7));
   }
- 
 
   #contact-us-btn {
     display: inline-block;
@@ -420,7 +419,6 @@ footer a:hover {
     padding: 1em 2em;
     color: white;
     box-shadow: -1px 6px 5px rgba(107, 112, 141, 0.7);
-    }
   }
   #contact-us-btn:hover {
     opacity: 0.75;

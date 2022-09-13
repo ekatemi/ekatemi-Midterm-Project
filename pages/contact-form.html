@@ -24,7 +24,7 @@
     <!---FORM-->
     <section id="contact-us-form">
       <h1>Contact Us</h1>
-      <form id="contact-us" action="/action_page.php" method="get">
+      <form id="contact-us" action="/action_page.php" method="post">
         <!---name-->
         <label for="fullname">Full Name *</label>
         <input
@@ -67,7 +67,7 @@
           placeholder="Write your message here..."
           minlength="50"
         ></textarea>
-        <button id="submit-form-btn">Submit</button>
+        <button type="submit" id="submit-form-btn">Submit</button>
       </form>
     </section>
 
@@ -93,5 +93,6 @@
         <a href="#" target="_blank">Privacy Policy</a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
