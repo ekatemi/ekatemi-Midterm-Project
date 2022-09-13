@@ -118,6 +118,10 @@ a {
   margin-right: 1em;
 }
 
+#blue-btn-hero:hover {
+  opacity: 0.75;
+}
+
 /* CLIENT SECTION */
 .client-section {
   display: none;
@@ -157,7 +161,7 @@ a {
 }
 
 .project-description {
-  padding: 0 1em;
+  padding: 1em;
 }
 
 .learn-more-link a,
@@ -174,7 +178,6 @@ a {
 
 .learn-more-link {
   padding-top: 40px;
-  padding-bottom: 20px;
 }
 
 /* TESTIMONIAL SECTION */
@@ -260,20 +263,13 @@ a {
 section {
   margin-top: 5em;
 }
+
 .circle-icon {
-  position: relative;
-  top: 1em;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: auto;
   border-radius: 50%;
-  background-color: #ecf7ff;
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
-  margin-bottom: 3em;
-}
-.circle-icon img {
-  width: 50%;
+  background-color: #f2f4fc;
+  object-fit: scale-down;
 }
 
 /* QUESTION SECTION */
@@ -311,7 +307,7 @@ section {
 }
 
 form button:hover {
-  opacity: 0.8;
+  opacity: 0.75;
 }
 /*CONTACT US FORM*/
 
@@ -416,6 +412,9 @@ footer a:hover {
     background-color: #072ac8;
     padding: 1em 2em;
     color: white;
+  }
+  #contact-us-btn:hover {
+    opacity: 0.75;
   }
 
   #hero {
@@ -538,6 +537,16 @@ footer a:hover {
   }
   #contact-us {
     margin-top: 5em;
+  }
+
+  .email-phone-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .inline-form {
+    display: inline-block;
+    width: 48%;
   }
 
   /*FOOTER*/
