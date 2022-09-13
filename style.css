@@ -406,12 +406,21 @@ footer a:hover {
 
   .navbar {
     width: 80%;
+    text-shadow: -1px 6px 5px rgba(107, 112, 141, 0.7);
   }
+
+  #navbar-logo {
+    filter: drop-shadow(-1px 6px 5px rgba(107, 112, 141, 0.7));
+  }
+ 
+
   #contact-us-btn {
     display: inline-block;
     background-color: #072ac8;
     padding: 1em 2em;
     color: white;
+    box-shadow: -1px 6px 5px rgba(107, 112, 141, 0.7);
+    }
   }
   #contact-us-btn:hover {
     opacity: 0.75;
