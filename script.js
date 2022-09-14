@@ -1,51 +1,74 @@
-/* Selecting the HTML form and adding a 'submit' event listener */
-const form = document.getElementById("contact-us");
-const url = form.action;
+/* 
+For the window object, the load event is fired when the whole webpage (HTML) has loaded fully, 
+including all dependent resources, including JavaScript files, CSS files, and images.*/
+window.addEventListener("load", function () {
 
-let fullName = document.getElementById("fullname");
-let email = document.getElementById("email");
-let phone = document.getElementById("phone");
-let message = document.getElementById("message");
-
-form.addEventListener("submit", function (e) {
-  // Prevent default behavior:
-  e.preventDefault();
-
-  /*   function validateForm() {
-    if (phone.charAt(0) !== "+") {
-      alert("Phone number should start from +!");
-      return false;
-    }
+  const submitButton = document.getElementById("submit-form-btn");
+  if (submitButton) {
+    submitButton.addEventListener("click", submitForm);
   }
-  validateForm(); */
 
-  const data = {
-    name: fullName.value,
-    email: email.value,
-    phone: phone.value,
-    message: message.value,
-  };
+  function submitForm() {
+    let fullName = document.getElementById("fullname").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
 
-  const body = { item: data };
+    if (!phone.startsWith("+")) {
+      document.getElementById("tel-error").innerHTML =
+        "Number must start with +!";
+    } else if (message.length < 50) {
+      document.getElementById("message-error").innerHTML =
+        "Minimum length is 50 characters";
+    } else {
+      
+      const form = document.getElementById("contact-us");
+// Prevents form from submitting by default
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
 
-  const fetchParams = {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-      "X-API-Key": "a0wwnrex_JeRhBybn5iFYziStv9d2M6Mchd2b4B4H",
-    },
-    body: JSON.stringify(body),
-  };
+      const url = form.action;
 
-  fetch(url, fetchParams)
-    .then((response) => {
-      if (response.ok) return response.json();
-    })
-    .then((json) => {
-      console.log(json);
-    })
-    .catch((error) => {
-      console.error("error");
-    });
+      const data = {
+        name: fullName,
+        email: email,
+        phone: phone,
+        message: message,
+      };
+
+      const body = { item: data };
+
+      const fetchParams = {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "X-API-Key": "a0wwnrex_JeRhBybn5iFYziStv9d2M6Mchd2b4B4H",
+        },
+        body: JSON.stringify(body),
+      };
+
+      fetch(url, fetchParams)
+        .then((response) => {
+          if (response.ok) return response.json();
+        })
+        //if all ok then
+        .then((json) => {
+          console.log(json);
+          document.getElementById("message-error").innerHTML =
+            "Thank you for contact us!";
+          fullName = "";
+          email = "";
+          phone = "";
+          message = "";
+        })
+        .catch((err) => console.log(err));
+    }
+
+
+//end of function submitForm 
+} 
+
+//END window.addEventListener!!!!!
 });
