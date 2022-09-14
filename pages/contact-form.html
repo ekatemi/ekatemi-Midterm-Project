@@ -24,14 +24,18 @@
     <!---FORM-->
     <section id="contact-us-form">
       <h1>Contact Us</h1>
-      <form id="contact-us" action="/action_page.php" method="post">
+      <form
+        id="contact-us"
+        action="https://database.deta.sh/v1/a0wwnrex/contactmessages/items"
+        method="POST"
+      >
         <!---name-->
         <label for="fullname">Full Name *</label>
         <input
           type="text"
           id="fullname"
           name="fullname"
-          placeholder="Enter your email"
+          placeholder="Enter your full name"
           required
         />
         <!---email-->
@@ -52,8 +56,9 @@
             <input
               type="tel"
               id="phone"
-              name="email"
+              name="phone"
               placeholder="Enter your phone number"
+              onsubmit="validateForm()"
               required
             />
           </div>
