@@ -347,6 +347,11 @@ textarea {
   margin-top: 1.5em;
 }
 
+#tel-error {
+  color: red;
+  font-size: smaller;
+}
+
 /*FOOTER*/
 footer {
   padding: 2em 3em 4em;

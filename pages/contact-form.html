@@ -58,9 +58,9 @@
               id="phone"
               name="phone"
               placeholder="Enter your phone number"
-              onsubmit="validateForm()"
               required
             />
+            <span id="tel-error"></span>
           </div>
         </div>
         <!---message-->
@@ -72,6 +72,7 @@
           placeholder="Write your message here..."
           minlength="50"
         ></textarea>
+        <span id="message-error"></span>
         <button type="submit" id="submit-form-btn">Submit</button>
       </form>
     </section>
@@ -98,6 +99,6 @@
         <a href="#" target="_blank">Privacy Policy</a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
