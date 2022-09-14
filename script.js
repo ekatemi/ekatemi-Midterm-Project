@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 /* For the window object, the load event is fired when the whole webpage (HTML) has loaded fully, 
 including all dependent resources, including JavaScript files, CSS files, and images.*/
 window.addEventListener("load", function () {
+=======
+/* 
+For the window object, the load event is fired when the whole webpage (HTML) has loaded fully, 
+including all dependent resources, including JavaScript files, CSS files, and images.*/
+window.addEventListener("load", function () {
+
+>>>>>>> 4a73ee6ba847f1a36f76012115f2b3bf3f8118d9
   const submitButton = document.getElementById("submit-form-btn");
   if (submitButton) {
     submitButton.addEventListener("click", submitForm);
@@ -19,8 +27,14 @@ window.addEventListener("load", function () {
       document.getElementById("message-error").innerHTML =
         "Minimum length is 50 characters";
     } else {
+<<<<<<< HEAD
       const form = document.getElementById("contact-us");
       // Prevents form from submitting by default
+=======
+      
+      const form = document.getElementById("contact-us");
+// Prevents form from submitting by default
+>>>>>>> 4a73ee6ba847f1a36f76012115f2b3bf3f8118d9
       form.addEventListener("submit", (e) => {
         e.preventDefault();
       });
@@ -55,16 +69,32 @@ window.addEventListener("load", function () {
           console.log(json);
           document.getElementById("message-error").innerHTML =
             "Thank you for contact us!";
+<<<<<<< HEAD
           document.getElementById("fullname").value = "";
           document.getElementById("email").value = "";
           document.getElementById("phone").value = "";
           document.getElementById("message").value = "";
+=======
+          fullName = "";
+          email = "";
+          phone = "";
+          message = "";
+>>>>>>> 4a73ee6ba847f1a36f76012115f2b3bf3f8118d9
         })
         .catch((err) => console.log(err));
     }
 
+<<<<<<< HEAD
     //end of function submitForm
   }
 
   //END window.addEventListener!!!!!
 });
+=======
+
+//end of function submitForm 
+} 
+
+//END window.addEventListener!!!!!
+});
+>>>>>>> 4a73ee6ba847f1a36f76012115f2b3bf3f8118d9
