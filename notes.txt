@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Selecting the HTML form and adding a 'submit' event listener */
 const form = document.getElementById("contact-us");
 const url = form.action;
@@ -53,5 +52,3 @@ form.addEventListener("submit", function (e) {
 
 
 
-=======
->>>>>>> 4a73ee6ba847f1a36f76012115f2b3bf3f8118d9
